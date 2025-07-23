@@ -16,29 +16,29 @@ const samplePins = [
     description: 'Timeless symbol of love, carved in pristine white marble beauty'
   },
   {
-    image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=450&fit=crop',
-    title: 'Mountain Adventure',
-    description: 'Breathtaking views and outdoor exploration'
+    image: 'img/culture.jpeg',
+    title: 'Cultural Threads of India',
+    description: 'Ancient traditions breathe in modern moments across every region.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=350&fit=crop',
-    title: 'DIY Plant Hangers',
+    image: 'img/premmandir.jpeg',
+    title: 'Carved by Faith — Temples of India',
     description: 'Macrame plant hangers to bring nature indoors'
   },
   {
     image: 'img/jagrnath.jpeg',
     title: 'Chariot of Faith',
-    description: 'The night glows as chariot carries faith through the streets'
+    description: 'Capturing sacred spaces where history, worship, and architecture converge'
   },
   {
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=380&fit=crop',
-    title: 'Abstract Art',
-    description: 'Bold colors and expressive brushstrokes'
+    image: 'img/puri.jpeg',
+    title: ' Essence of Puri',
+    description: 'Where waves meet devotion at Jagannath’s eternal coastal abode'
   },
   {
-    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=450&fit=crop',
-    title: 'Cozy Reading Nook',
-    description: 'The perfect corner for book lovers'
+    image: 'img/history.jpeg',
+    title: 'The Timeless Heritage of India',
+    description: 'Preserving India’s essence through architecture, dynasty, culture, and sacred silence.'
   },
   {
     image: 'img/stupa.jpg',
@@ -46,9 +46,9 @@ const samplePins = [
     description: 'Stone and silence converge where history meets meditative devotion'
   },
   {
-    image: 'https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=300&h=500&fit=crop',
-    title: 'Minimalist Bedroom',
-    description: 'Serene spaces for peaceful rest'
+    image: 'img/random.jpeg',
+    title: 'Chai & Chuski',
+    description: 'A blend of warmth and nostalgia, where every sip tells a story'
   }
 ];
 
