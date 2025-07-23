@@ -3,17 +3,17 @@ const samplePins = [
   {
     image: 'img/rathwheels.jpeg',
     title: 'Wheels of Devotion',
-    description: 'Crafting colossal wheels for timeless journeys of devotion and tradition.'
+    description: 'Crafting colossal wheels for timeless journeys of devotion and tradition'
   },
   {
     image: 'img/ganesh.jpeg',
-    title: 'Majestic Vinayaka Darshan',
-    description: 'Sacred rituals, modaks, and chants invoke wisdom and strength.'
+    title: 'Vinayaka Darshan',
+    description: 'Sacred rituals, modaks, and chants invoke wisdom and strength'
   },
   {
     image: 'img/tajmahal.jpeg',
     title: 'Love Etched in Stone',
-    description: 'Timeless symbol of love, carved in pristine white marble beauty.'
+    description: 'Timeless symbol of love, carved in pristine white marble beauty'
   },
   {
     image: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=450&fit=crop',
@@ -26,9 +26,9 @@ const samplePins = [
     description: 'Macrame plant hangers to bring nature indoors'
   },
   {
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=300&h=400&fit=crop',
-    title: 'Wedding Bouquet Ideas',
-    description: 'Romantic florals for your special day'
+    image: 'img/jagrnath.jpeg',
+    title: 'Chariot of Faith',
+    description: 'The night glows as chariot carries faith through the streets'
   },
   {
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=380&fit=crop',
@@ -41,9 +41,9 @@ const samplePins = [
     description: 'The perfect corner for book lovers'
   },
   {
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300&h=300&fit=crop',
-    title: 'Healthy Smoothie Bowl',
-    description: 'Nutritious and Instagram-worthy breakfast'
+    image: 'img/stupa.jpg',
+    title: ' Buddha’s The Circle of Nirvana',
+    description: 'Stone and silence converge where history meets meditative devotion'
   },
   {
     image: 'https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?w=300&h=500&fit=crop',
@@ -118,12 +118,21 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
+const catBtn = document.querySelectorAll('.category-tag');
+catBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      btn.style.transform = '';
+    }, 150);
+  });
+});
 // Generate pins
 function generatePins() {
   const container = document.getElementById('pins-container');
 
   // Create multiple sets for better grid filling
-  for (let set = 0; set < 3; set++) {
+  for (let set = 0; set < 1; set++) {
     samplePins.forEach((pin, index) => {
       const pinElement = document.createElement('div');
       pinElement.className = 'pin-card';
