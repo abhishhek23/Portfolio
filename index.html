@@ -14,7 +14,7 @@
             rawpiixel
              </div>
             <div class="search-container">
-                <input type="text" class="search-bar" placeholder="Search for ideas, recipes, home decor...">
+                <input type="text" class="search-bar" placeholder="Search culture, heritage, travel, and more…">
                 <svg width="1.2rem" height="1.2rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="ui-svg-inline"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg>
             </div>
             <div class="nav-buttons">
@@ -91,8 +91,7 @@
     <section class="hero">
         <img src="img/wallpaperr.jpeg" alt="Background Image" class="bgimg">
         <div class="hero-content">
-            <h1>Discover Ideas That Move You</h1>
-            <p>Find inspiration for your next project, recipe, or adventure</p>
+            <h1>Where Pixels Meet Heritage</h1>Scroll through the stories of India’s culture, people, and spirit.</p>
             <div class="hero-cta">
                 <a href="#explore" class="btn btn-primary" style="font-size: 18px; padding: 16px 32px;">Start Exploring</a>
                 <a href="#" class="btn btn-secondary" style="font-size: 18px; padding: 16px 32px;">Learn More</a>
@@ -103,17 +102,17 @@
     <!-- Main Content -->
     <main class="main-content" id="explore">
         <div class="container">
-            <h2 class="section-title">Trending Ideas</h2>
+            <h2 class="section-title">Frames of India</h2>
             
             <!-- Categories -->
             <div class="categories">
-                <a href="#" class="category-tag">Home Decor</a>
-                <a href="#" class="category-tag">Recipes</a>
-                <a href="#" class="category-tag">Fashion</a>
+                <a href="#" class="category-tag">Heritage</a>
+                <a href="#" class="category-tag">Culture</a>
+                <a href="#" class="category-tag">History</a>
                 <a href="#" class="category-tag">Travel</a>
-                <a href="#" class="category-tag">DIY</a>
-                <a href="#" class="category-tag">Wedding</a>
-                <a href="#" class="category-tag">Art</a>
+                <a href="#" class="category-tag">Temples</a>
+                <a href="#" class="category-tag">Wild life</a>
+                <a href="#" class="category-tag">India</a>
             </div>
 
             <!-- Masonry Grid -->
@@ -122,6 +121,101 @@
             </div>
         </div>
     </main>
+    
+    <!-- Footer -->
+     <!-- Footer -->
+<footer style="background-color: #f7f9fb; padding: 40px 20px; margin-top: 60px; font-family: Arial, sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+
+    <div style="flex: 1 1 200px;">
+      <h2 style="color: #e60023; font-size: 24px; margin-bottom: 10px;">rawpiixel</h2>
+      <p style="color: #555;">Discover ideas that move you. Find inspiration for your next project, recipe, or adventure.</p>
+    </div>
+
+    <div style="flex: 1 1 120px;">
+      <h4 style="font-weight: bold;">Explore</h4>
+      <ul style="list-style: none; padding: 0; margin: 0; color: #555;">
+        <li><a href="#trending" style="color: #555; text-decoration: none;">Trending</a></li>
+        <li><a href="#gallery" style="color: #555; text-decoration: none;">Gallery</a></li>
+        <li><a href="#culture" style="color: #555; text-decoration: none;">Culture</a></li>
+        <li><a href="#temples" style="color: #555; text-decoration: none;">Temples</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 120px;">
+      <h4 style="font-weight: bold;">Categories</h4>
+      <ul style="list-style: none; padding: 0; margin: 0; color: #555;">
+        <li><a href="#home-decor" style="color: #555; text-decoration: none;">Home Decor</a></li>
+        <li><a href="#travel" style="color: #555; text-decoration: none;">Travel</a></li>
+        <li><a href="#art" style="color: #555; text-decoration: none;">Art</a></li>
+        <li><a href="#fashion" style="color: #555; text-decoration: none;">Fashion</a></li>
+      </ul>
+    </div>
+
+    <div style="flex: 1 1 120px;">
+      <h4 style="font-weight: bold;">Connect</h4>
+      <ul style="list-style: none; padding: 0; margin: 0; color: #555;">
+        <li><a href="#about" style="color: #555; text-decoration: none;">About</a></li>
+        <li><a href="#contact" style="color: #555; text-decoration: none;">Contact</a></li>
+        <li><a href="#privacy" style="color: #555; text-decoration: none;">Privacy</a></li>
+        <li><a href="#terms" style="color: #555; text-decoration: none;">Terms</a></li>
+        <li><a href="https://instagram.com" target="_blank" style="color: #555; text-decoration: none;">Instagram</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr style="margin: 30px auto; border: none; border-top: 1px solid #ccc; width: 90%;">
+  <p style="text-align: center; color: #888;">© 2024 rawpiixel. All rights reserved. Celebrating Indian culture and heritage.</p>
+</footer>
+
+<!-- Smooth Scroll + Search Logic -->
+<script>
+  // Smooth scrolling for footer links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Search bar logic
+  const searchInput = document.querySelector('input[type="search"], input[placeholder*="Search"]');
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        const query = this.value.toLowerCase();
+        const sectionMap = {
+          "trending": "#trending",
+          "gallery": "#gallery",
+          "culture": "#culture",
+          "temples": "#temples",
+          "home decor": "#home-decor",
+          "travel": "#travel",
+          "art": "#art",
+          "fashion": "#fashion",
+          "about": "#about",
+          "contact": "#contact",
+          "privacy": "#privacy",
+          "terms": "#terms"
+        };
+
+        const match = Object.keys(sectionMap).find(key => query.includes(key));
+        if (match) {
+          const section = document.querySelector(sectionMap[match]);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
+          alert("Section not found.");
+        }
+      }
+    });
+  }
+</script>
 
     <!-- Floating Action Button -->
     <button class="fab" onclick="createPin()">+</button>
